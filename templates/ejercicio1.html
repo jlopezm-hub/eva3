@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Ejercicio 1{% endblock %}
+{% block heading %}Promedio y asistencia{% endblock %}
+{% block content %}
+<section class="tarjeta">
+  <p>Ingresa tres notas entre 10 y 70 y una asistencia entre 0 y 100%.</p>
+  {% if error %}<p class="error">{{ error }}</p>{% endif %}
+  <form method="post">
+    {% for i in range(1, 4) %}
+      <label for="nota{{ i }}">Nota {{ i }}</label>
+      <input id="nota{{ i }}" name="nota{{ i }}" type="number" min="10" max="70" step="0.1" required>
+    {% endfor %}
+    <label for="asistencia">Asistencia (%)</label>
+    <input id="asistencia" name="asistencia" type="number" min="0" max="100" step="0.1" required>
+    <button class="boton" type="submit">Calcular resultado</button>
+  </form>
+</section>
+{% endblock %}

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Programación EVA 3{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <main class="contenedor">
+    <header class="encabezado">
+      <p class="etiqueta">PROGRAMACIÓN EVA 3</p>
+      <h1>{% block heading %}Aplicación de ejercicios{% endblock %}</h1>
+    </header>
+    {% block content %}{% endblock %}
+    <footer><a href="{{ url_for('inicio') }}">Volver al menú principal</a></footer>
+  </main>
+</body>
+</html>

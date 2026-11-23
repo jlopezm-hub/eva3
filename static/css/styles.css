@@ -1,0 +1,24 @@
+:root { font-family: Arial, sans-serif; color: #172033; background: #eef3f8; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; }
+.contenedor { width: min(680px, 92%); padding: 32px 0; }
+.encabezado { margin-bottom: 22px; }
+.etiqueta { color: #3b6eea; font-size: .8rem; font-weight: 700; letter-spacing: .12em; margin: 0 0 8px; }
+h1 { margin: 0; font-size: clamp(1.8rem, 5vw, 2.8rem); }
+.tarjeta { background: white; border-radius: 18px; padding: 28px; box-shadow: 0 12px 35px #183b5d1a; }
+.introduccion { text-align: center; }
+.acciones { display: grid; gap: 12px; margin-top: 24px; }
+form { display: grid; gap: 8px; }
+label { font-weight: 700; margin-top: 10px; }
+input { border: 1px solid #c7d0dc; border-radius: 8px; padding: 12px; font-size: 1rem; }
+.boton { display: inline-block; border: 0; border-radius: 9px; padding: 13px 18px; background: #3b6eea; color: white; font-weight: 700; text-align: center; text-decoration: none; cursor: pointer; margin-top: 18px; }
+.boton:hover { background: #2856c7; }
+.secundario { background: #172033; }
+.error { background: #fff0f0; color: #a62a2a; padding: 12px; border-radius: 8px; }
+.resultado { text-align: center; }
+.estado { font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.resultado-principal { font-size: 2.5rem; font-weight: 700; margin: 20px 0 8px; }
+.exito { border-top: 6px solid #28a56a; }
+.fallo { border-top: 6px solid #c74343; }
+footer { text-align: center; margin-top: 24px; }
+footer a { color: #3b6eea; }

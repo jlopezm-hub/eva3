@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Resultado{% endblock %}
+{% block heading %}{{ titulo }}{% endblock %}
+{% block content %}
+<section class="tarjeta resultado {{ 'exito' if aprobado else 'fallo' }}">
+  <p class="estado">{{ estado }}</p>
+  <p class="resultado-principal">{{ resultado }}</p>
+  <p>{{ detalle }}</p>
+  <a class="boton" href="{{ url_for('inicio') }}">Elegir otro ejercicio</a>
+</section>
+{% endblock %}
