@@ -13,7 +13,7 @@ Aplicación Flask para resolver los dos ejercicios solicitados.
 2. Instalar dependencias:
 
    ```text
-   pip install -r requirements.txt
+   py -m pip install -r requirements.txt
    ```
 
 3. Iniciar la aplicación:
